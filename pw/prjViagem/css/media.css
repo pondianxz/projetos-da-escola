@@ -1,0 +1,144 @@
+@media (max-width: 1140px) {
+    .rodape_parte_meio, .rodape_parte_meio2{
+        flex-direction: column;
+    }
+
+    .rodape_parte_meio_categorias{
+        justify-content: space-between;
+
+        >div{
+            flex-grow: 1;
+        }
+    }
+
+    .rodape_select{
+        min-width: 0;
+    }
+    .rodape_parte_meio2_newsletter{
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .containers{
+        flex-direction: column;
+    }
+
+    .container_atracao{
+        width: 100%;
+    }
+
+    .tudo_hotel{
+        flex-direction: column;
+        >div{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 850px) {
+    .logo_rodape{
+        width: 250px;
+    }
+}
+
+
+
+
+/* some os botoes de rede social na navbar e coloca o icone de pesquisa no lado direito */
+@media (max-width: 800px) {
+    .nav_links_sociais{
+        display: none;
+    }
+
+    .texto_link_nav_menu{
+        display: none;
+    }
+
+    .nav_parte_esquerda{
+        gap: 15px;
+    }
+
+    .icone_pesquisar_a_direita_da_navbar{
+        display: block;
+    }
+    .icone_pesquisar_a_esquerda_da_navbar{
+        display: none;
+    }
+
+    .navegacao_parte_cima > ul{
+        padding: 10px 40px;
+    }
+
+    .tudo_rodape{
+        h2{
+            font-size: 18px;
+        }
+    }
+
+    .rodape_parte_cima_linha_esquerda,.rodape_parte_cima_linha_direita{
+        display: none;
+    }
+    .rodape_parte_cima{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 710px) {
+    .nav_logo_empresa{
+        width: 200px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .rodape_parte_meio_categorias, .rodape_parte_meio2_div_links_uteis{
+        flex-direction: column;
+    }
+    .rodape_parte_meio2_links_uteis2{
+        gap: 4em;
+    }
+
+    .titulo_hoteis_recomendados{
+        font-size: 30px;
+    }
+    .h1_info_hotel{
+        font-size: 32px;
+    }
+}
+
+
+
+
+@media (max-width: 450px) {
+    .texto_link_nav{
+        font-size: 14px;
+    }
+    .div_titulo_e_texto{
+        margin: 0 10%;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .navegacao_parte_cima > ul{
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    
+    .texto_link_nav{
+        font-size: 12px;
+    }
+
+    .navegacao_parte_baixo{
+        padding: 10px 10px;
+        justify-content: start;
+    }
+}
