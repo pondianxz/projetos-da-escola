@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - NovaViagem</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hoteis.css">
+    <link rel="stylesheet" href="css/atracoes.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <!-- parte 1 -->
+    <header>
+        <nav class="navegacao">
+            <div class="navegacao_parte_cima">
+                <ul>
+                    <div class="nav_parte_esquerda">
+                        <!-- menu -->
+                        <li>
+                            <a href="#" class="nav_link_menu texto_link_nav">
+                                <svg class="nav_svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                                <h2 class="texto_link_nav texto_link_nav_menu">Menu</h2>
+                            </a>
+                        </li>
+
+                        <!-- pesquisar (visível) -->
+                        <li class="icone_pesquisar_a_esquerda_da_navbar">
+                            <a href="#" title="Pesquisar">
+                                <svg class="nav_svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                            </a>
+                        </li>
+                    </div>
+
+
+                    <!-- Logo NovaViagem -->
+                    <li>
+                        <a href="index.html">
+                            <img class="nav_logo_empresa" width="300px" src="images/logo_empresa/novaviagem_logo.png" alt="">
+                        </a>
+                    </li>
+            
+
+                    <div class="nav_links_sociais">
+                        <li>
+                            <a href="#" title="Instagram">
+                                <svg class="svg_midia_social" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="Facebook">
+                                <svg class="svg_midia_social" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="Twitter">
+                                <svg class="svg_midia_social" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"/></svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="WhatsApp">
+                                <svg class="svg_midia_social" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"/></svg>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- pesquisar (visível só com max-width: 800px) -->
+                    <li class="icone_pesquisar_a_direita_da_navbar">
+                        <a href="#" title="Pesquisar">
+                            <svg class="nav_svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#1f1f1f"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="navegacao_parte_baixo">
+                <ul>
+                    <div class="nav_links_uteis">
+                        <li>
+                            <a href="#" class="texto_link_nav">
+                                Explorar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="texto_link_nav">
+                                Quem somos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="texto_link_nav">
+                                Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="texto_link_nav">
+                                Contato
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="texto_link_nav">
+                                Estadias
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <section class="parte_2">
+
+            <div class="div_imagem_banner_parte2">
+                <figure>
+                    <div class="transparente_imagem_banner"></div>
+                    <img class="imagem_banner_parte2" src="images/o-que-fazer-no-rio-de-janeiro-RJ.jpg" alt="Paisagem rio de Janeiro">
+                    <figcaption>
+                        <div class="div_texto_banner_parte2">
+                            <h1 class="texto_banner_parte2">Rio de Janeiro</h1>
+                            <p class="texto_paragrafo_banner_parte_2">A Cidade Maravilhosa</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+
+
+        <section class="parte_3">
+            <h1>Comece sua viagem ao Rio de Janeiro com o pé direito.</h1>
+        </section>
+
+
+
+
+
+        <section class="parte_4">
+            <div class="tudo_parte_4">
+                <div class="div_titulo_parte_4">
+                    <div class="titulo_parte_4">
+                        <h1 class="titulo_hoteis_recomendados">Hotéis recomendados</h1>
+                        <div class="linha_titulo_parte_4"></div>
+                    </div>
+                </div>
+                
+                
+                <!-- todos os hoteis -->
+                <div class="todos_hoteis">
+
+                    <!-- tudo hotel -->
+                    <div class="tudo_hotel">
+                        <div class="hotel_info">
+                            <div class="hotel_info_cima">
+                                <div class="hotel_info_cima_titulo">
+                                    <div class="div_link_info_hotel">
+                                        <a href="#" class="link_info_hotel">
+                                            <h1 class="h1_info_hotel">Hotel 1</h1>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="hotel_info_cima_preco_estrelas">
+                                        <h2>$$</h2>
+                                        <div class="hotel_info_cima_estrelas">
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel_info_cima_desc">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo similique? Tempora minima saepe doloremque nemo quo perferendis tenetur natus magni, neque a maxime at id. Libero tenetur provident doloribus!
+                                    Magnam itaque nobis enim accusantium consectetur non quidem odit sunt blanditiis voluptatem suscipit rem id laboriosam nam consequatur, eius adipisci corporis doloribus, numquam error veniam facere assumenda sit. Vitae, et?</p>
+                                </div>
+                            </div>
+
+
+                            <div class="hotel_info_baixo">
+                                <button>
+                                    <svg class="svg_ver_detalhes_hotel" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m80-160 240-320L80-800h520q19 0 36 8.5t28 23.5l216 288-216 288q-11 15-28 23.5t-36 8.5H80Z"/></svg>         
+                                    <h2>Ver mais detalhes</h2>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="div_img_hotel">
+                            <img src="images/Hotel-Fasano-Rio-de-Janeiro.jpg" class="img_hotel" alt="">
+                        </div>
+                    </div>
+                    <!-- tudo hotel fim-->
+
+
+                    <!-- tudo hotel -->
+                    <div class="tudo_hotel">
+                        <div class="hotel_info">
+                            <div class="hotel_info_cima">
+                                <div class="hotel_info_cima_titulo">
+                                    <div class="div_link_info_hotel">
+                                        <a href="#" class="link_info_hotel">
+                                            <h1 class="h1_info_hotel">Hotel 2</h1>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="hotel_info_cima_preco_estrelas">
+                                        <h2>$$$$</h2>
+                                        <div class="hotel_info_cima_estrelas">
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                            <svg class="svg_estrela" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel_info_cima_desc">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo similique? Tempora minima saepe doloremque nemo quo perferendis tenetur natus magni, neque a maxime at id. Libero tenetur provident doloribus!
+                                    Magnam itaque nobis enim accusantium consectetur non quidem odit sunt blanditiis voluptatem suscipit rem id laboriosam nam consequatur, eius adipisci corporis doloribus, numquam error veniam facere assumenda sit. Vitae, et?</p>
+                                </div>
+                            </div>
+
+
+                            <div class="hotel_info_baixo">
+                                <button>
+                                    <svg class="svg_ver_detalhes_hotel" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m80-160 240-320L80-800h520q19 0 36 8.5t28 23.5l216 288-216 288q-11 15-28 23.5t-36 8.5H80Z"/></svg>         
+                                    <h2>Ver mais detalhes</h2>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="div_img_hotel">
+                            <img src="images/grand-hyatt-barra-da-tijuca-rio-de-janeiro.webp" class="img_hotel" alt="">
+                        </div>
+                    </div>
+                    <!-- tudo hotel fim-->
+
+                    
+
+
+
+                </div>
+                <!-- todos hoteis fim -->
+
+
+
+            </div>
+        </section>
+        
+
+
+
+        <section class="parte_5">
+            <div class="div_titulo_e_texto">
+                <h1 class="titulo_variacao1">Atrações</h1>
+                <p class="paragrafo_variacao1">Entre paisagens naturais extraordinárias, praias encantadoras e pontos turísticos únicos, a cidade maravilhosa reúne algumas das atrações mais famosas do mundo: o Cristo Redentor, Maracanã, Teatro Municipal, e o inovador Museu do Amanhã, além de muitos outros não citados aqui.</p>
+                <p class="paragrafo_variacao1">Venha se apaixonar por uma das cidades que mais encanta o mundo!</p>
+            </div>
+
+
+            <div class="div_containers">
+                <!-- containers de atrações -->
+                <div class="containers">
+                    <!-- container atração 1 -->
+                    <div class="container_atracao container1">
+                        <div class="img_container_atracao img_container_atracao1"></div>
+                        <div class="container_atracao_body container_body1">
+                            <h1 class="titulo_atracao">Cristo Redentor</h1>
+                            <p class="paragrafo_atracao">Estátua de 38 metros localizada no topo do morro do Corcovado. Inaugurada em 1931, é um dos maiores símbolos do Brasil e do cristianismo no mundo, além de ser considerada uma das Sete Maravilhas do Mundo Moderno.</p>
+                        </div>
+                    </div>
+
+                    <!-- container atração 2 -->
+                    <div class="container_atracao container2">
+                        <div class="img_container_atracao img_container_atracao2"></div>
+                        <div class="container_atracao_body container_body2">
+                            <h1 class="titulo_atracao">Maracanã</h1>
+                            <p class="paragrafo_atracao">Um dos estádios mais famosos do mundo. Inaugurado em 1950, já recebeu Copas do Mundo, Jogos Olímpicos e grandes shows, sendo um símbolo do futebol brasileiro.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- container atração 3 -->
+                    <div class="container_atracao container3">
+                        <div class="img_container_atracao img_container_atracao3"></div>
+                        <div class="container_atracao_body container_body3">
+                            <h1 class="titulo_atracao">Teatro Municipal</h1>
+                            <p class="paragrafo_atracao">Localizado no centro da cidade, destaca-se por sua arquitetura imponente inspirada na Ópera de Paris e por receber óperas, balés, concertos e grandes espetáculos culturais.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- container atração 4 -->
+                    <div class="container_atracao container4">
+                        <div class="img_container_atracao img_container_atracao4"></div>
+                        <div class="container_atracao_body container_body4">
+                            <h1 class="titulo_atracao">Museu do Amanhã</h1>
+                            <p class="paragrafo_atracao">Museu de ciências e inovação. Projetado pelo arquiteto espanhol Santiago Calatrava, tem um design futurista e interativo, abordando temas como sustentabilidade, mudanças climáticas e o futuro da humanidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- containers de atrações fim -->
+            </div>
+        </section>
+
+
+
+
+
+        <!-- parte 6-->
+        <footer>
+
+
+            <div class="tudo_rodape">
+                <div class="rodape_parte_cima">
+                    <div class="rodape_parte_cima_linha_esquerda"></div>
+                    <a href="index.html">
+                        <img class="logo_rodape" src="images/logo_empresa/novaviagem_logo_branca.png" alt="">
+                    </a>
+                    <div class="rodape_parte_cima_linha_direita"></div>
+                </div>
+
+
+                <!-- parte meio -->
+                <div class="rodape_parte_meio">
+                    <div class="rodape_parte_meio_redes">
+                        <h2>Nos acompanhe nas nossas redes:</h2>
+                        <div class="rodape_parte_meio_redes_div_svg">
+                            <!-- Instagram -->
+                            <a href="#" title="Instagram">
+                                <svg class="svg_midia_social_rodape" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="#" title="Facebook">
+                                <svg class="svg_midia_social_rodape" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a href="#" title="Twitter">
+                                <svg class="svg_midia_social_rodape" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"/></svg>
+                            </a>
+
+                            <!-- Whatsapp -->
+                            <a href="#" title="WhatsApp">
+                                <svg class="svg_midia_social_rodape" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="30px" height="30px">    <path d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985 c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004 c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186 c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581 S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431 c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437 c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239 c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812 c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rodape_parte_meio_categorias">
+                        <div class="rodape_parte_meio_categoria rodape_parte_meio_categoria1">
+                            <h2>América do Sul</h2>
+                            <select class="rodape_select" name="" id="">
+                                <option value="">Argentina</option>
+                                <option value="" selected>Brasil</option>
+                                <option value="">Chile</option>
+                                <option value="">Colômbia</option>
+                                <option value="">Peru</option>
+                                <option value="">uruguai</option>
+                            </select>
+                        </div>
+                        <div class="rodape_parte_meio_categoria rodape_parte_meio_categoria2">
+                            <h2>Estados Unidos</h2>
+                            <select class="rodape_select" name="" id="">
+                                <option value=""selected>Flórida</option>
+                                <option value="" >Nova York</option>
+                                <option value="">Orlando</option>
+                                <option value="">Califórnia</option>
+                                <option value="">Washington DC</option>
+                            </select>
+                        </div>
+                        <div class="rodape_parte_meio_categoria rodape_parte_meio_categoria3">
+                            <h2>Europa</h2>
+                            <select class="rodape_select" name="" id="">
+                                <option value="">França</option>
+                                <option value="" selected>Itália</option>
+                                <option value="">Portugal</option>
+                                <option value="">Inglaterra</option>
+                                <option value="">Espanha</option>
+                                <option value="">Alemanha</option>
+                                <option value="">Grécia</option>
+                                <option value="">Luxemburgo</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- parte meio fim-->
+
+
+                <!-- parte meio 2 -->
+                <div class="rodape_parte_meio2">
+
+
+                    <div class="rodape_parte_meio2_div_links_uteis">
+
+                        <div class="rodape_parte_meio2_links_uteis">
+                            <h2>Links Úteis</h2>
+                            <ul class="rodape_ul_links_uteis">
+                                <li>
+                                    <a href="#">Quem Somos</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Explorar</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Login</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Nosso Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Empresas Parceiras</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="rodape_parte_meio2_links_uteis2">
+                            <div class="rodape_parte_meio2_newsletter_cima">
+                                <h2>Empresa</h2>
+                                <ul class="rodape_ul_links_uteis">
+                                    <li>
+                                        <a href="#">Termos de Uso</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Política de Privacidade</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Anuncie conosco</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="rodape_parte_meio2_newsletter_baixo">
+                                <h2>Contato</h2>
+                                <h3>novaviagem@gmail.com</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rodape_parte_meio2_newsletter">
+                        <div class="rodape_parte_meio2_newsletter_texto">
+                            <h2>Increva-se em nossa newsletter</h2>
+                            <h3>Fique por dentro das maiores novidades, guias de viagem, e muito mais.</h3>
+                        </div>
+                        <div class="rodape_parte_meio2_newsletter_input">
+                            <input class="rodape_input_newsletter" type="email" name="" id="" placeholder="voce@email.com">
+                            <button class="rodape_btn_newsletter">Cadastrar</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- parte meio 2 fim-->
+
+
+
+                <!-- parte final -->
+                <div class="rodape_parte_final">
+                    <div class="rodape_parte_final_linha"></div>
+                    <div class="rodape_parte_final_texto">
+                        <p>&copy; Copyright NovaViagem 2025. Todos os direitos reservados</p>
+                    </div>
+                </div>
+                <!-- parte final fim -->
+
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>
