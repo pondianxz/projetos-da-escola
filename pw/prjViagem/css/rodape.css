@@ -1,0 +1,178 @@
+footer{
+    background: var(--azul_escuro);
+}
+.tudo_rodape{
+    /*border: 1px solid blue;*/
+    margin: 6% 12% 6% 12%;
+    display: flex;
+    gap: 4em;
+    flex-direction: column;
+    
+    h2{
+        color: #fff;
+        transition: .3s;
+    }
+    a,h3,h2{
+        line-height: 1.3;
+    }
+    a,h3,p{
+        color: var(--azul_pouco_escuro);
+    }
+    p{
+        font-weight: 600;
+    }
+    /*> div{
+        border: 1px solid #0f0;
+
+        > div{
+            border: 1px solid cyan;
+
+            > div{
+                border: 1px solid #f0f;
+
+                > div{
+                    border: 1px solid #792bb1;
+                }
+            }
+        }
+    }*/
+}
+
+.rodape_parte_meio2_div_links_uteis{
+    ul,li,a,h2,h3{
+        width: fit-content;
+    }
+}
+
+.rodape_select{
+    background: var(--azul_meio_escuro);
+    color: #fff;
+    min-width: 200px;
+}
+
+.rodape_select, .rodape_input_newsletter, .rodape_btn_newsletter{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: .3em;
+    border: none;
+}
+
+.rodape_input_newsletter{
+    width: 50%;
+    background: var(--azul_mais_escuro);
+    color: #fff;
+    cursor: auto;
+}
+
+.rodape_input_newsletter::placeholder{
+    color: var(--azul_meio_claro);
+    opacity: .5;
+}
+
+
+
+.rodape_btn_newsletter{
+    width: 50%;
+    background: var(--ciano);
+    color: var(--azul_mais_escuro);
+    transition: .2s;
+}
+.rodape_btn_newsletter:hover{
+    background: var(--ciano_pouco_escuro);
+}
+
+.rodape_parte_final{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    p{
+        text-align: center;
+    }
+}
+
+.rodape_parte_meio2_newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    width: 30%;
+}
+
+.rodape_parte_meio2_newsletter_input{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.rodape_parte_meio2_links_uteis2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rodape_ul_links_uteis{
+    font-size: 20px;
+}
+
+.rodape_parte_meio2_div_links_uteis{
+    display: flex;
+    gap: 4em;
+}
+
+.rodape_parte_meio2{
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+}
+
+
+.rodape_parte_meio_categorias{
+    display: flex;
+    gap: 1.5em;
+}
+
+.rodape_parte_meio_redes_div_svg{
+    display: flex;
+    gap: .6em;
+}
+
+.svg_midia_social_rodape{
+    transition: .2s;
+    fill: #fff;
+}
+.svg_midia_social_rodape:hover{
+    fill: var(--azul_claro);
+}
+
+.rodape_parte_meio{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.rodape_parte_final_linha{
+    border-top: 1px solid var(--azul_meio_escuro);
+}
+
+.rodape_parte_cima_linha_esquerda, .rodape_parte_cima_linha_direita{
+    width: 36%;
+    border-top: 2px solid var(--azul_meio_escuro);
+}
+
+.rodape_parte_cima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.rodape_parte_meio_redes,.rodape_parte_meio_categoria{
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.logo_rodape{
+    width: 400px;
+    transition: .3s;
+}
