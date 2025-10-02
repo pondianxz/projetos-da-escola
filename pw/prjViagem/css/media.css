@@ -23,6 +23,8 @@
 
 
 
+
+
 @media (max-width: 1024px) {
     .containers{
         flex-direction: column;
@@ -90,6 +92,8 @@
 }
 
 
+
+
 @media (max-width: 710px) {
     .nav_logo_empresa{
         width: 200px;
@@ -110,6 +114,14 @@
         font-size: 30px;
     }
     .h1_info_hotel{
+        font-size: 32px;
+    }
+
+    .titulo_variacao1{
+        font-size: 30px;
+    }
+
+    .parte_3 h1{
         font-size: 32px;
     }
 }
@@ -140,5 +152,25 @@
     .navegacao_parte_baixo{
         padding: 10px 10px;
         justify-content: start;
+    }
+
+    .rodape_parte_cima, .icone_pesquisar_a_direita_da_navbar,.navegacao_parte_baixo{
+        display: none;
+    }
+
+    .nav_logo_empresa{
+        width: 90%;
+    }
+}
+
+
+
+
+@media (max-width:300px) {
+    .hotel_info_cima_preco_estrelas{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
     }
 }
