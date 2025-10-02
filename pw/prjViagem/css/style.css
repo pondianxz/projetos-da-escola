@@ -7,6 +7,7 @@
     --azul_meio_claro:       #88b3dd;
     --azul_ciano_escuro:     #006daaff;
     --azul_marinho:          #0353a4ff;
+    --azul_rodape_link:      #73bef0;
     --azul_pouco_escuro:     #1b76b3;
     --azul_meio_escuro:      #005791;
     --azul_escuro:           #003559ff;
@@ -46,11 +47,9 @@ body{
     /* pra navbar nao ficar bugada devido ao position:fixed */
     padding-top: 130px;
 }
-
 main{
     display: flex;
     flex-direction: column;
-    gap: 9em;
     width: 100%;
 }
 
@@ -94,7 +93,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1600px;
+    width: 100%;
     animation: animacao_imagem_banner 1.5s ease;
 
     >figcaption{
@@ -119,6 +118,17 @@ main{
     height: 100%;
     background: linear-gradient(to bottom, #00000000, rgba(0, 0, 0, 0.5));
 }
+
+
+.div_imagem_banner_parte2{
+    /*border: 1px solid blue;*/
+    width: 100%;
+    /*margin: 0 40px;*/
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .nav_svg{
     fill: var(--azul_ciano_escuro);
@@ -168,14 +178,6 @@ main{
 
 
 
-
-.div_imagem_banner_parte2{
-    /*border: 1px solid blue;*/
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .div_texto_banner_parte2{
     display: flex;
     flex-direction: column;
@@ -202,16 +204,11 @@ main{
 
 .parte_2{
     width: 100%;
-    /*border: 1px solid red;*/
 }
-/*
-.parte_3{
-    background: var(--azul_marinho);
-}*/
 
 .imagem_banner_parte2{
     width: 100%;
-    max-height: 700px;
+    max-height: 800px;
 }
 
 .titulo_variacao1{
@@ -235,7 +232,6 @@ main{
 @keyframes animacao_imagem_banner{
     0%{
         opacity: 0;
-        transform: translateX(-100px);
     }100%{
         opacity: 1;
     }
@@ -247,4 +243,45 @@ main{
     }100%{
         opacity: 1;
     }
+}
+.parte_3{
+    display: flex;
+    justify-content: center;
+}
+
+.part3textos{
+    width: 60%;
+    margin: 9% 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.7em
+}
+
+.parte_3 h1 , .parte_3 h2 {
+    display: flex;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+}
+.parte_3 h2 {
+    font-size: 24px;
+    color: var(--azul_claro);
+    font-weight: 400;
+    width: unset;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.div_part3textos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--azul_marinho);
+}
+
+.div_filler_navbar_parte_cima{
+    display: none;
 }

@@ -3,7 +3,7 @@
 }.tudo_parte_4{
     display: flex;
     flex-direction: column;
-    gap: 7em;
+    gap: 3em;
     margin: 6% 12% 6% 12%;
     /* border: 1px solid blue;
     >div{
