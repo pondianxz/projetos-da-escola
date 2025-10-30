@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream | Um dos maiores catálogos de jogos do mundo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- navabr maneira -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Stream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catálogo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Jogos de ação</a></li>
+              <li><a class="dropdown-item" href="#">Jogos de tiro</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Jogos roguelike</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Nessa página..." aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="secaoSlogan">
+    <h1 class="tituloSlogan">Um dos maiores catálogos de jogos do mundo</h1>
+    <p class="pSlogan">Crie uma conta grátis agora e desfrute de experiências incríveis.</p>
+  </section>
+
+
+
+  <section class="secaoCarrosel">
+    <!-- carrossel -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/almas pretas.webp" class="d-block w-100" height="900" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/cabeça de copo.avif" class="d-block w-100" height="900" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/blasfemia.webp" class="d-block w-100" height="900" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/maine.jpg" class="d-block w-100" height="900" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/vermelho.jpg" class="d-block w-100" height="900" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+  </section>
+
+
+  
+
+  <!-- secao cards 1 -->
+  <section class="secaoCards">
+    <h2 class="tituloCategoriaJogos">Em promoção</h2>
+
+    <div class="todosCards">
+      <div class="card" style="width: 18rem;">
+        <img src="images/blasfemia.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Blasphemous</h5>
+          <p class="card-text">O Penitente busca redenção em um mundo religioso corrompido e cheio de sofrimento.</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">COMPRAR AGORA</a>
+          <a href="#" class="card-link">
+            <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/cabeça de copo.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cuphead</h5>
+          <p class="card-text">Cuphead e Mugman enfrentam chefes desafiadores para pagar uma dívida com o diabo.</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">COMPRAR AGORA</a>
+          <a href="#" class="card-link">
+            <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="card" style="width: 18rem;">
+        <img src="images/murder drones.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Murder Drones Retribution</h5>
+          <p class="card-text">Em um mundo onde drones assassinos são o perigo, Uzi busca matar todos os humanos.</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">COMPRAR AGORA</a>
+          <a href="#" class="card-link">
+            <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/Balatro_capa_digital_Windows.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Balatro</h5>
+          <p class="card-text">Tente pontuar o máximo de chips que conseguir para vencer os blinds, esitlo roguelike!</p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">COMPRAR AGORA</a>
+          <a href="#" class="card-link">
+            <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- secao cards 2 -->
+  <section class="secaoCards">
+    <div class="card" style="width: 18rem;">
+      <img src="images/almas pretas.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dark Souls III</h5>
+        <p class="card-text">Enfrente inimigos brutais e desafios mortais em busca de superar a maldição da morte.</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">COMPRAR AGORA</a>
+        <a href="#" class="card-link">
+          <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/vermelho.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Red Dead Redemption II</h5>
+        <p class="card-text">Arthur Morgan vai em busca de sua segunda redenção vermelha com tuberculose.</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">COMPRAR AGORA</a>
+        <a href="#" class="card-link">
+          <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/gd.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Geometry Dash</h5>
+        <p class="card-text">Pule por cima de obstáculos como blocos, espinhos, e jogue fases online.</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">COMPRAR AGORA</a>
+        <a href="#" class="card-link">
+          <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="images/Minerar e construir.avif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft</h5>
+        <p class="card-text">Em um mundo de blocos, faça qualquer criação onde o único limite é a imaginação!</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">COMPRAR AGORA</a>
+        <a href="#" class="card-link">
+          <svg class="svgAddCarrinho" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#F3F3F3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    
+  </section>
+
+
+
+  <!-- rodape maneiro -->
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre nós</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Catálogo</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQ</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contato</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2025 Stream. Todos os direitos reservados</p>
+    </footer>
+  </div>
+
+</body>
+</html>

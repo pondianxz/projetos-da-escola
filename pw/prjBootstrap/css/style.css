@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --corFundo: hsl(248, 22%, 7%);
+    --principal: hsl(337, 100%, 55%);
+    --principalSec: hsl(251, 100%, 58%);
+}
+
+html,body{
+    font-family: 'Gantari', Arial, Helvetica, sans-serif;
+    background: var(--corFundo);
+}
+
+.navbar-brand{
+    font-weight: 800;
+}
+
+.secaoSlogan{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6em 0;
+}
+
+.tituloSlogan{
+    font-size: 3rem;
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+
+    max-width: fit-content;
+    background: linear-gradient(to right, var(--principal), var(--principalSec));
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+.pSlogan{
+    font-size: 1.3rem;
+}
+
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tituloCategoriaJogos{
+    padding: 1em;
+    text-align: center;
+
+    color: hsl(from var(--principal) h calc(s - 30) calc(l - 10));
+}
+
+.todosCards{
+    padding: 0 0;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.secaoCarrosel{
+    border-top: 1px solid hsl(from var(--corFundo) h s calc(l + 25));
+    border-bottom: 1px solid hsl(from var(--corFundo) h s calc(l + 25));
+    background: hsl(from var(--corFundo) h s calc(l + 5));
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+    width: 80%;
+}
+
+.card{
+    border-radius: .5em;
+    border: 1px solid hsl(from var(--corFundo) h s calc(l + 15));
+
+    img{
+        height: 200px;
+    }
+}
+
+.card, .card ul{
+    background: hsl(from var(--corFundo) h s calc(l + 5));
+}
+
+.svgAddCarrinho{
+    fill: var(--principal);
+}
