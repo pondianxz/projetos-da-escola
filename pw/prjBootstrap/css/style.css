@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --corFundo: hsl(248, 22%, 7%);
-    --principal: hsl(337, 100%, 55%);
+    --principal: hsl(164, 100%, 55%);
     --principalSec: hsl(251, 100%, 58%);
 }
 
@@ -24,7 +24,7 @@ html,body{
 
 .tituloSlogan{
     font-size: 3rem;
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-weight: 700;
 
@@ -47,14 +47,15 @@ html,body{
 }
 
 .tituloCategoriaJogos{
-    padding: 1em;
+    padding: 1.3em 1em;
     text-align: center;
 
-    color: hsl(from var(--principal) h calc(s - 30) calc(l - 10));
+    color: hsl(from var(--principalSec) h s calc(l + 7));
 }
 
 .todosCards{
-    padding: 0 0;
+    margin: 0 3em;
+    padding: 1em 0;
     display: flex;
     gap: 2em;
     justify-content: center;
@@ -69,7 +70,11 @@ html,body{
 }
 
 .carousel{
-    width: 80%;
+    width: 65%;
+}
+
+.carousel-item > img{
+    height: 650px;
 }
 
 .card{

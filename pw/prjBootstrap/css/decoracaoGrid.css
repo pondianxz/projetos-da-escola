@@ -1,0 +1,35 @@
+.divGrids{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.secaoTodasSecoesCards{
+    position: relative;
+}
+
+.divQuadrados{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+}
+
+.divQuadrado1{
+    background: hsl(from var(--corFundo) h s calc(l + 15));
+}
+.divQuadrado2{
+    background: hsl(from var(--corFundo) h s calc(l + 9));
+}
+.divQuadrado3,.divQuadrado4{
+    background: hsl(from var(--corFundo) h s calc(l + 5));
+}
+
+.divQuadradosDireita > .divQuadrado3{
+    background: none;
+}
