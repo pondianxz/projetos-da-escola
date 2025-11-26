@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --branco: hsl(270, 100%, 99%);
+    --preto: hsl(263, 57%, 3%);
+    --corBase: hsl(207, 91%, 68%);
+    --corBase2: hsl(260, 100%, 66%);
+    --corCinza: hsl(205, 29%, 92%);
+}
+
+body,input,button,textarea{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+input,button{
+    border: none;
+}
+
+textarea{
+    resize: none;
+    border-color: #00000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url(../images/fundopwed.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: #ffffff5f;
+    background-repeat: no-repeat;
+    
+    overflow-x: hidden;
+    height: 100vh;
+    padding-top: 105px;
+    position: relative;
+}
+
+.fundoDegradeBrancoPraBaixo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    z-index: -1;
+    background: linear-gradient(to bottom, #00000000, #ffffffd3);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: var(--branco);
+    box-shadow: 0 0 10px 0 hsl(from var(--corBase2) h calc(s - 22) calc(l - 22) / 0.5);
+}
+
+.navbar > ul,.navbarLeft, .navbarRight, .navbarMid{
+    padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+
+    a{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--preto);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+.navbarMid{
+    gap: 1.7em;
+}
+
+.navbarRight{
+    gap: 1.3em;
+}
+
+.secaoFormContato{
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.h1FormContato{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.divFormContato{
+    background: #fff;
+    /* border: 1px solid var(--corCinza); */
+    box-shadow: 5px 5px 10px 0 hsl(from var(--preto) h s l / 0.1);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    border-radius: .5em;
+    padding: 4em;
+}
+
+.formContato{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+    }
+    
+}
+
+label{
+    font-size: 1.1rem;
+}
+
+.inputNavbarPesquisar{
+    background: hsl(from var(--corCinza) h s calc(l - 10) / 0.7);
+    font-size: 1.2rem;
+    padding: .3em .5em;
+    border-radius: .3em;
+
+}
+
+.inputForm,button{
+    background: var(--corCinza);
+    font-size: 1.1rem;
+    padding: .3em;
+    border-radius: .3em;
+    border: 2px solid hsl(from var(--corCinza) h s calc(l - 10));
+}
+
+button{
+    background: var(--corBase2);
+    border: none;
+    color: var(--branco);
+    font-weight: 500;
+    padding: .5em;
+    cursor: pointer;
+    /* transition: .2s; */
+}
+
+.btnPesquisar{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+    padding: .3em .5em;
+    
+    > p{
+        transition: .3s;
+    }
+
+    >svg{
+        fill: var(--branco);
+        transition: .3s;
+    }
+}
+.btnPesquisar:hover{
+    > svg{
+        transform: translateX(6px);
+    }
+    > p{
+        transform: translateX(-3px);
+    }
+}
+
+button:hover{
+    background: hsl(from var(--corBase2) h calc(s - 3) calc(l - 3));
+}
+
+.dados{
+    display: none;
+    flex-direction: column;
+    gap: .5em;
+
+    .textoDados{
+        font-size: 1.1rem;
+
+        span{
+            font-weight: 700;
+        }
+    }
+    
+}
+
+
+.textoFooterForm{
+    color: hsl(from var(--corCinza) h s calc(l - 30));
+    font-size: .8rem;
+    text-align: center;
+}
