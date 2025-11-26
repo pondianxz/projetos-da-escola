@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+button,body{
+    font-family: 'Zalando Sans',Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: .3em;
+}
+
+.divMain{
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8em;
+}
+
+.divTitulosMain{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+    h1,h2{
+        width: 60%;
+        text-align: center;
+    }
+}
+
+h1{
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+
+.btnEscolha{
+    font-size: 1.2rem;
+    padding: .3em 1.3em;
+    border-radius: .3em;
+    color: #fff;
+    background: #3d50e2;
+}
+.btnEscolha:hover{
+    background: #394bd5;
+}
+
+#resposta{
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+    > h2{
+        text-align: center;
+    }
+}
+.respostaFinal {
+    font-weight: 600;
+}
+
+.respostaEmpate{
+    color: #505050;
+}
+
+.respostaGanhou{
+    color: rgb(62, 205, 62);
+}
+
+.respostaPerdeu{
+    color: rgb(224, 58, 58);
+}
+
+.secaoBotoesEResposta{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.divBotoes{
+    display: flex;
+    gap: .4em;
+}
+
+#statsTxRodadas,#statsTxVitorias,#statsTxDerrotas{
+    font-weight: 600;
+}
+
+.divStats{
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: .3em;
+    box-shadow: 5px 5px 10px 0 #00000026;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: .6em;
+}
+
+.divTxStats{
+    display: flex;
+    gap: .3em;
+    align-items: center;
+}
+
+.svgTrofeu{
+    fill: #deba36;
+}
+
+#btnResetStats{
+    color: #fff;
+    background: #e23d3d;
+    padding: .4em;
+    width: 35%;
+}
+#btnResetStats:hover{
+    background: #d73838;
+}
